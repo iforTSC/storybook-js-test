@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;400&family=Ropa+Sans&display=swap');
+
+.storybook-button {
+  font-family: 'Barlow';
+  cursor: pointer;
+  padding: 28px;
+  outline: none;
+  border-radius: 3px;
+  margin: 8px;
+  border: none !important;
+  text-decoration: none;
+  font-weight:600
+}
+.storybook-button--block{
+  width:160px;
+  display:block;
+  margin:8px;
+  text-align: left;
+  opacity:0.75;
+  border-radius: 24px;  line-height:16px;
+  font-size:16px;
+}
+.menu-toggle-container{
+  display:flex;
+  justify-content: flex-end;
+}
+.menu-toggle {  font-family: 'Barlow';
+  cursor: pointer;
+  outline: none;
+  border-radius: 50%;
+  margin: 8px;
+  border: none !important;
+  text-decoration: none;
+  font-weight:800;
+  background:white;
+  height:32px;
+  width:32px;
+position: relative;
+}
+
+.menu-toggle--open:before{
+  content:"✖";position:absolute; top:8px; left:10px;
+  line-height:16px;
+  font-size:16px;
+  
+  color:gray;
+}
+
+.menu-toggle--closed:before{
+  content:"📃";position:absolute; top:8px; left:6px;
+  line-height:16px;
+  font-size:16px;
+  
+  color:gray;
+}
+
+
+.storybook-button--block:hover{
+  opacity:1;
+}
+
+.storybook-button span:first-of-type{
+  margin-right:8px
+}
+.storybook-button--primary {
+  color: white;
+  background-color: #0078A7;
+}
+.storybook-button--secondary {
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+}
+.storybook-button--small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.storybook-button--medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+.storybook-button--large {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+
+.side-menu{
+  background:ghostwhite;
+  border-radius: 24px;
+  padding:8px; 
+  transition: .5s;
+  position:absolute;
+  height:fit-content;
+  min-width: 170px;
+  width: 170px; 
+  top:0px
+}
+
+.side-menu--open{
+  left:0px;
+}
+
+.side-menu--closed{
+  left: 0px;
+  min-width: 50px;width: 50px;
+}
+
+.menu-button-container {
+position:relative; display:block;overflow:hidden;
+}
+
+.menu-button-container--open {
+  transition:.5s; transition-delay:.25s; height:auto; max-height:300px
+  }
+  .menu-button-container--closed {
+    transition:.5s; transition-delay:.25s;  max-height:0; 
+    }
+.menu-button-container-inner{
+  position:relative;
+  transition-delay:0s;
+  transition:.5s;
+}
+.menu-button-container-inner--open {
+  left:0;transition-delay:.5s;
+}
+.menu-button-container-inner--closed {
+ left:-200px;
+}
